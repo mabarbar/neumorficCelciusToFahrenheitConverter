@@ -17,6 +17,10 @@ body {
   font-size: 24px;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 .convex {
 	display: inherit;
 	justify-content: center;

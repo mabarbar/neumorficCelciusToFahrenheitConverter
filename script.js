@@ -6,21 +6,21 @@ const resetBtn = document.querySelector(".reset");
 const changeBtn = document.querySelector(".change");
 const p = document.querySelector("p");
 
-const convertToFahrenheit = () => {
-  if ((numberToConvert.value === "")) {
+const convertToCelcius = () => {
+  if (numberToConvert.value === "") {
     p.textContent = "Give me a number!"; // nie działa
   } else {
-    const result = (numberToConvert.value - 32) / 1.8;
+    const result = Math.round((numberToConvert.value - 32) / 1.8);
     p.textContent = `${numberToConvert.value} ${one.textContent} is ${result} ${two.textContent}`;
   }
 };
 
-const convertToCelcius = () => {
-  if ((numberToConvert.value === "")) {
+const convertToFahrenheit = () => {
+  if (numberToConvert.value === "") {
     p.textContent = "Give me a number!"; // nie działa
   } else {
     const result = Math.round(numberToConvert.value * 1.8 + 32);
-    p.textContent = `${numberToConvert.value} ${two.textContent} is ${result} ${one.textContent}`;
+    p.textContent = `${numberToConvert.value} ${one.textContent} is ${result} ${two.textContent}`;
   }
 };
 
@@ -28,9 +28,11 @@ const change = () => {
   if (one.textContent === "°C") {
     one.textContent = "°F";
     two.textContent = "°C";
+    convertToCelcius();
   } else {
     one.textContent = "°C";
     two.textContent = "°F";
+    convertToFahrenheit();
   }
 };
 
