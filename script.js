@@ -7,7 +7,7 @@ const changeBtn = document.querySelector(".change");
 const p = document.querySelector("p");
 
 const convertToFahrenheit = () => {
-  if ((numberToConvert.textContent = "")) {
+  if ((numberToConvert.value === "")) {
     p.textContent = "Give me a number!"; // nie działa
   } else {
     const result = (numberToConvert.value - 32) / 1.8;
@@ -16,7 +16,7 @@ const convertToFahrenheit = () => {
 };
 
 const convertToCelcius = () => {
-  if ((numberToConvert.textContent = "")) {
+  if ((numberToConvert.value === "")) {
     p.textContent = "Give me a number!"; // nie działa
   } else {
     const result = Math.round(numberToConvert.value * 1.8 + 32);
