@@ -66,13 +66,13 @@ button {
   font-size: 18px;
   border: 1px solid #ededed;
   border-radius: 8px;
-  transition: 0.3s;
   text-transform: uppercase;
-
+  
   background: #ededed;
-  -webkit-box-shadow: 15px 15px 20px #b3b3b3, -15px -15px 20px white;
-  box-shadow: 15px 15px 20px #b3b3b3, -15px -15px 20px white;
+  -webkit-box-shadow: 0.7em 0.7em 0.9em #b3b3b3, -0.7em -0.7em 0.9em white;
+  box-shadow: 0.7em 0.7em 0.9em #b3b3b3, -0.7em -0.7em 0.9em white;
   outline: #cccccc 1px solid;
+  transition: 0.2s;
 
   /* background: #ededed;
   -webkit-box-shadow: inset 2em 2em 2em -1em #b3b3b3,
@@ -82,6 +82,10 @@ button {
 }
 
 button:hover {
-  background-color: #ddd;
-  color: #000;
+  color: #ddd;
+  background: #ededed;
+  -webkit-box-shadow: inset 1.1em 1.1em 1.1em -1em #b3b3b3,
+    inset -1.1em -1.1em 1.1em -1em white;
+  box-shadow: inset 1.1em 1.1em 1.1em -1em #b3b3b3, inset -1.1em -1.1em 1.1em -1em white;
+  transition: 0.2s;
 }
