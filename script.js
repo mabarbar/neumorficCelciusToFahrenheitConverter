@@ -10,8 +10,10 @@ const convertToCelcius = () => {
   if (numberToConvert.value === "") {
     p.textContent = "Give me a number!"; // nie działa
   } else {
-    const result = Math.round((numberToConvert.value - 32) / 1.8);
-    p.textContent = `${numberToConvert.value} ${one.textContent} is ${result} ${two.textContent}`;
+    const result = (numberToConvert.value - 32) / 1.8;
+    p.textContent = `${numberToConvert.value} ${
+      one.textContent
+    } is ${result.toFixed(1)} ${two.textContent}`;
   }
 };
 
@@ -19,8 +21,10 @@ const convertToFahrenheit = () => {
   if (numberToConvert.value === "") {
     p.textContent = "Give me a number!"; // nie działa
   } else {
-    const result = Math.round(numberToConvert.value * 1.8 + 32);
-    p.textContent = `${numberToConvert.value} ${one.textContent} is ${result} ${two.textContent}`;
+    const result = numberToConvert.value * 1.8 + 32;
+    p.textContent = `${numberToConvert.value} ${
+      one.textContent
+    } is ${result.toFixed(1)} ${two.textContent}`;
   }
 };
 
